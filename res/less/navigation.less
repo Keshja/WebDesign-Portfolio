@@ -1,0 +1,33 @@
+.nav {
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    
+
+    #menu {
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+        
+
+        li a{
+            display: flex;
+            flex-direction: row;
+            margin: 0 1rem;
+            color: var(--text);
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+            
+        }
+        .active {
+                text-decoration: underline;
+            }
+    }
+}
