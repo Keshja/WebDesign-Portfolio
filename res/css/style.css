@@ -23,6 +23,9 @@ a {
 .nav {
   background: transparent;
   display: flex;
+  position: sticky;
+  top: 0;
+  background-color: var(--background);
   justify-content: space-between;
   width: 100%;
   padding: 1rem;
@@ -46,6 +49,21 @@ a {
 }
 .nav #menu .active {
   text-decoration: underline;
+}
+.intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+}
+.intro img {
+  width: 200px;
+  height: 300px;
+  border: 2px solid var(--text);
+  border-radius: 50%;
+  margin: 1rem;
 }
 .work {
   margin-top: 5em;
@@ -71,4 +89,7 @@ a {
   width: 700px;
   height: 100%;
   margin: 1rem;
+}
+.footer {
+  bottom: 0;
 }
